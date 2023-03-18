@@ -1,11 +1,15 @@
-//Sétimo desafio do 7DaysOfCode - ???
+//Sétimo desafio do 7DaysOfCode - Funções em Javascript
 
-function desafioSete() {
-    alert('Caso queira ver o código, clique no botão GitHub');
-};
+//Explicação do Desafio
+function mostraDesafioAlert() {
 
-function vejaDesafioSete( ) {
-    alert ("");
+    alert("");
 
-    alert ("");
-};
+}
+
+//Funções
+function funcaoCalcula() {
+    
+    alert("Em breve resolverei o desafio");
+
+}

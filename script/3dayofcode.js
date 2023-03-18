@@ -1,11 +1,15 @@
 //Terceiro desafio do 7DaysOfCode - Fluxo de Decisão
 
-function desafioTres() {
-    alert('Caso queira ver o código, clique no botão GitHub');
-};
+//Explicação do Desafio
+function mostraDesafioAlert() {
 
-function vejaDesafioTres( ) {
-    alert ("");
+    alert("");
 
-    alert ("");
-};
+}
+
+//Estrutura de Decisão
+function mostraEscolha() {
+    
+    alert("Em breve resolverei o desafio");
+
+}

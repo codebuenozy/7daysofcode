@@ -1,11 +1,15 @@
-//Sexto desafio do 7DaysOfCode - ???
+//Sexto desafio do 7DaysOfCode - Remoção de Arrays
 
-function desafioSeis() {
-    alert('Caso queira ver o código, clique no botão GitHub');
-};
+//Explicação do Desafio
+function mostraDesafioAlert() {
 
-function vejaDesafioSeis( ) {
-    alert ("");
+    alert("");
 
-    alert ("");
-};
+}
+
+//Remoção de Arrays
+function removerDaLista() {
+    
+    alert("Em breve resolverei o desafio");
+
+}

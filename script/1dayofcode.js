@@ -1,5 +1,21 @@
 //Primeiro desafio do 7DaysOfCode - Operações Booleanas
 
+//Explicação do Desafio
+function mostraDesafioAlert() {
+
+    alert("Reescreva o código a seguir de maneira que ele imprima as informações de maneira correta, que faça sentido e sem erros:");
+
+    alert("let numeroUm = 1, let stringUm = '1'");
+    alert("let numeroTrinta = 30, let stringTrinta = '30'");
+    alert("let numeroDez = 10, let stringDez = '10'");
+
+    alert("Comparar o valor e tipo das variáveis declaradas e imprimir o resultado usando console.log.");
+
+    alert("Aproveitei para melhorar o código implementando funções e imprimir tanto no console (aperte F12 e verifique) como em um HTML usando um botão com alert, caso queira analisar o código clique no botão GitHub.");
+
+}
+
+//Variáveis
 let numeroUm = 1;
 let stringUm = "1";
 
@@ -15,20 +31,7 @@ let numeroSeis = 6;
 let stringSete = "7";
 let stringOito = "8";
 
-function mostraDesafioAlert() {
-
-    alert("Reescreva o código a seguir de maneira que ele imprima as informações de maneira correta, que faça sentido e sem erros:");
-
-    alert("let numeroUm = 1, let stringUm = '1'");
-    alert("let numeroTrinta = 30, let stringTrinta = '30'");
-    alert("let numeroDez = 10, let stringDez = '10'");
-
-    alert("Comparar o valor e tipo das variáveis declaradas e imprimir o resultado usando console.log.");
-
-    alert("Aproveitei para melhorar o código implementando funções e imprimir tanto no console (aperte F12 e verifique) como em um HTML usando um botão com alert, caso queira analisar o código clique no botão GitHub.");
-
-}
-
+//Comparando os Valores
 function comparaValorVariaveis(primeiraVariavel, segundaVariavel) {
 
     if (primeiraVariavel == segundaVariavel) {
@@ -39,6 +42,7 @@ function comparaValorVariaveis(primeiraVariavel, segundaVariavel) {
     return valor
 }
 
+//Comparando os Tipos
 function comparaTipoVariaveis(primeiraVariavel, segundaVariavel) {
 
     if (typeof (primeiraVariavel) === typeof (segundaVariavel)) {
@@ -49,14 +53,14 @@ function comparaTipoVariaveis(primeiraVariavel, segundaVariavel) {
     return tipo
 }
 
+//Mostrando resultado no Console
 function mostraComparacaoConsole(valor, tipo) {
 
     console.log(valor + tipo)
 
 }
 
-//Resolução do Desafio 1 impressa usando alert
-
+//Mostrando resultado no HTML
 function mostraComparacaoAlert() {
 
     alert(comparaValorVariaveis(numeroUm, stringUm) + comparaTipoVariaveis(numeroUm, stringUm));
@@ -66,7 +70,6 @@ function mostraComparacaoAlert() {
 }
 
 //Resolução do Desafio 1 impressa usando console.log
-
 mostraComparacaoConsole(comparaValorVariaveis(numeroUm, stringUm), comparaTipoVariaveis(numeroUm, stringUm));
 
 mostraComparacaoConsole(comparaValorVariaveis(numeroTrinta, stringTrinta), comparaTipoVariaveis(numeroTrinta, stringTrinta));

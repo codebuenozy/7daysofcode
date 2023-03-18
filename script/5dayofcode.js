@@ -1,11 +1,15 @@
-//Quinto desafio do 7DaysOfCode - ???
+//Quinto desafio do 7DaysOfCode - Arrays e Coleções
 
-function desafioCinco() {
-    alert('Caso queira ver o código, clique no botão GitHub');
-};
+//Explicação do Desafio
+function mostraDesafioAlert() {
 
-function vejaDesafioCinco( ) {
-    alert ("");
+    alert("");
 
-    alert ("");
-};
+}
+
+//Arrays e Coleções
+function adcionarNaLista() {
+    
+    alert("Em breve resolverei o desafio");
+
+}
