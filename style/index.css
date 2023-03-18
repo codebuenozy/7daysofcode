@@ -23,6 +23,7 @@
 html {
     overflow-x: hidden;
     overflow-y: hidden;
+    min-width: 365px;
 }
 
 body {
@@ -127,7 +128,7 @@ body {
     }
 }
 
-@media screen and (max-width: 380px) {
+@media screen and (max-width: 440px) {
     .html {
         overflow-x: scroll;
         overflow-y: scroll;
@@ -143,5 +144,6 @@ body {
     .btn-menu {
         margin-top: 0.5rem;
         margin-bottom: 0.5rem;
+        padding: 0.5rem;
     }
 }
