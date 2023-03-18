@@ -1,52 +1,76 @@
 //Primeiro desafio do 7DaysOfCode - Operações Booleanas
 
-function desafioUm() {
+let numeroUm = 1;
+let stringUm = "1";
 
-    //Variáveis
+let numeroTrinta = 30;
+let stringTrinta = "30";
 
-    let numeroUm = 1;
-    let stringUm = '1';
+let numeroDez = 10;
+let stringDez = "10";
 
-    //Comparação
+let numeroCinco = 5;
+let numeroSeis = 6;
 
-    if (numeroUm == stringUm) {
-        alert('As variáveis numeroUm e stringUm tem o mesmo valor, mas tipos diferentes')
+let stringSete = "7";
+let stringOito = "8";
+
+function mostraDesafioAlert() {
+
+    alert("Reescreva o código a seguir de maneira que ele imprima as informações de maneira correta, que faça sentido e sem erros:");
+
+    alert("let numeroUm = 1, let stringUm = '1'");
+    alert("let numeroTrinta = 30, let stringTrinta = '30'");
+    alert("let numeroDez = 10, let stringDez = '10'");
+
+    alert("Comparar o valor e tipo das variáveis declaradas e imprimir o resultado usando console.log.");
+
+    alert("Aproveitei para melhorar o código implementando funções e imprimir tanto no console (aperte F12 e verifique) como em um HTML usando um botão com alert, caso queira analisar o código clique no botão GitHub.");
+
+}
+
+function comparaValorVariaveis(primeiraVariavel, segundaVariavel) {
+
+    if (primeiraVariavel == segundaVariavel) {
+        valor = "As variáveis declaradas " + primeiraVariavel + " e " + segundaVariavel + " tem o mesmo valor"
     } else {
-        alert('Ás variáveis numeroUm e stringUm não tem o mesmo valor')
-    };
+        valor = "As variáveis declaradas " + primeiraVariavel + " e " + segundaVariavel + " não tem o mesmo valor"
+    }
+    return valor
+}
 
-    //Variáveis
+function comparaTipoVariaveis(primeiraVariavel, segundaVariavel) {
 
-    let numeroTrinta = 30;
-    let stringTrinta = '30';
-
-    //Comparação
-
-    if (numeroTrinta === stringTrinta) {
-        alert('As variáveis numeroTrinta e stringTrinta tem o mesmo valor e mesmo tipo')
+    if (typeof (primeiraVariavel) === typeof (segundaVariavel)) {
+        tipo = " e possui o mesmo tipo."
     } else {
-        alert('Ás variáveis numeroTrinta e stringTrinta não tem o mesmo tipo');
-    };
+        tipo = " e possuem tipos diferentes."
+    }
+    return tipo
+}
 
-    //Variáveis
+function mostraComparacaoConsole(valor, tipo) {
 
-    let numeroDez = 10;
-    let stringDez = '10';
+    console.log(valor + tipo)
 
-    //Comparação
+}
 
-    if (numeroDez == stringDez) {
-        alert('As variáveis numeroDez e stringDez tem o mesmo valor, mas tipos diferentes')
-    } else {
-        alert('Ás variáveis numeroDez e stringDez não tem o mesmo valor');
-    };
+//Resolução do Desafio 1 impressa usando alert
 
-    alert('Caso queira ver o código, clique no botão GitHub');
-    
-};
+function mostraComparacaoAlert() {
 
-function vejaDesafioUm() {
-    alert('Sendo assim, a sua tarefa de hoje é reescrever o código abaixo de maneira que ele imprima as informações de maneira correta, que faça sentido e sem erros:');
+    alert(comparaValorVariaveis(numeroUm, stringUm) + comparaTipoVariaveis(numeroUm, stringUm));
+    alert(comparaValorVariaveis(numeroTrinta, stringTrinta) + comparaTipoVariaveis(numeroTrinta, stringTrinta));
+    alert(comparaValorVariaveis(numeroDez, stringDez) + comparaTipoVariaveis(numeroDez, stringDez));
 
-    alert("let numeroUm = 1, let stringUm = '1', let numeroTrinta = 30, let stringTrinta = '30', let numeroDez = 10, let stringDez = '10'");
-};
+}
+
+//Resolução do Desafio 1 impressa usando console.log
+
+mostraComparacaoConsole(comparaValorVariaveis(numeroUm, stringUm), comparaTipoVariaveis(numeroUm, stringUm));
+
+mostraComparacaoConsole(comparaValorVariaveis(numeroTrinta, stringTrinta), comparaTipoVariaveis(numeroTrinta, stringTrinta));
+
+mostraComparacaoConsole(comparaValorVariaveis(numeroDez, stringDez), comparaTipoVariaveis(numeroDez, stringDez));
+
+console.log("Caso queira analisar o código utilizado, clique no botão GitHub na página Desafio 1.");

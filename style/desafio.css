@@ -32,11 +32,11 @@ body {
 
 .menu {
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-around;
     align-items: center;
     padding: 0.2rem;
     width: auto;
-    height: 11vh;
+    height: auto;
     background: linear-gradient(var(--bgd-color1), var(--bgd-color2) 90%, var(--bgd-color1));
 }
 
@@ -44,6 +44,7 @@ body {
     border: 0.1rem solid var(--border-color);
     border-radius: 4px;
     padding: 0.7rem;
+    margin: 1rem;
     background: var(--bgd-color2);
 }
 
@@ -53,6 +54,7 @@ body {
 }
 
 .btn-a {
+    text-align: center;
     color: var(--text-color2);
 }
 
@@ -128,8 +130,11 @@ body {
 
     .menu {
         width: 100%;
-        height: 15vh;
-        justify-content: space-evenly;
+
         flex-wrap: wrap;
+    }
+
+    .btn-menu {
+        margin: 0.5rem;
     }
 }
